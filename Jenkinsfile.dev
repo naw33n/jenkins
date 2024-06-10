@@ -7,7 +7,7 @@ pipeline {
     stage('Repo Scan') {
             steps {
                 echo 'Trivy Repo Scan'
-                sh :'trivy repo https://github.com/naw33n/jenkins.git', branch: 'dev'
+                sh :'trivy repo https://github.com/naw33n/jenkins.git'
                 
             }
         }
