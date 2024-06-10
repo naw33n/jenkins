@@ -3,7 +3,6 @@ pipeline {
 
     stages {
 
-
     stage('Repo Scan') {
             steps {
                 echo 'Trivy Repo Scan'
