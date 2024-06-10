@@ -5,7 +5,7 @@ pipeline {
         stage('Code fetch') {
             steps {
                 echo 'Code Fetch from github'
-                git url :'https://github.com/naw33n/jenkins.git', branch: 'main'
+                git url :'https://github.com/naw33n/jenkins.git', branch: 'dev'
                 
             }
         }
