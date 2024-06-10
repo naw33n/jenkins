@@ -12,7 +12,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'docker build -t my-new-website .'
+                sh 'docker build -t nabin-website .'
 
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Deploy on Container'
                 //sh 'docker stop $(docker ps -q) && docker system prune -a '
-                sh 'docker run -t -p 80:80 my-new-website '
+                sh 'docker run -t -p 81:80 my-new-website '
             }
         }
     }
